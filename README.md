@@ -98,7 +98,7 @@ Finally, it is necessary to convert the files saved in `OUTPUT_FOLDER` into a fo
 
 ```sh
 # Convert quantized layer to a .bin format
-bash AQLM/convert_to_hf.py <BASE_MODEL_NAME_OR_PATH> <QUANTIZATION_FOLDER> <MODEL_OUTPUT_FOLDER> --save_tokenizer
+python AQLM/convert_to_hf.py <BASE_MODEL_NAME_OR_PATH> <QUANTIZATION_FOLDER> <MODEL_OUTPUT_FOLDER> --save_tokenizer
 ```
 - **Base model name or path:** name or path of the full-precision model
 - **Quantization folder:** `OUTPUT_FOLDER` path, where quantized layers are stored 
