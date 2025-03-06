@@ -43,11 +43,10 @@ The hardware required to run these scripts is entirely dependent on the models y
 ## Datasets and other materials
 All the results and materials from our work are available in our [Zenodo repository](https://doi.org/10.5281/zenodo.13752774).
 
-In particular, you can find the following folders:
-- **models**: contains the checkpoints for our  8, 4, 3, and 2 bit CodeLlama and DeepSeek Coder models described in RQ1. 
-- **datasets**: includes the random, mixed, and code calibration datasets analyzed in RQ2.
-- **predictions**: we provide completions of all analyzed models for each experiment in MultiPL-E-compatible files. Each folder contains `*.json.gz` files with all model's predictions for each task, as well as `*.results.json.gz` files with the test results for each completion. 
-- **results**: contains the accuracies of the evaluated models as well as the results of statistical tests.
+In particular, you can find the following folders: 
+- **datasets**: includes the random, mixed, and code calibration datasets analyzed in RQ2 and the Python/Java McEval benchmarks.
+- **predictions**: we provide completions of all analyzed models for each experiment and benchmark in MultiPL-E-compatible files. Each folder contains `*.json.gz` files with all model's predictions for each task, as well as `*.results.json.gz` files with the test results for each completion. 
+- **results**: contains the accuracies of the evaluated models as well as the results of statistical tests on both MultiPL-E and McEval benchmarks.
 
 
 ## Replication of the results
@@ -138,7 +137,7 @@ bash 2_run_benchmark_aqlm.sh <LANGUAGE_INDEX> <MODEL_NAME_OR_PATH>
 For example, to run the MultiPL-E benchmark for Java code on CodeLlama 7B, you must provide the following arguments:
 ```sh
 # Evaluate CodeLlama 7B with its original precision
-bash 1_run_benchmark_fp16.sh  0  codellama/CodeLlama-7b-hf
+bash multipl-e/1_run_benchmark_fp16.sh  0  codellama/CodeLlama-7b-hf
 ```
 
-This script will output the predictions of the model under the `results_cleaned` folder.
+This script will output the predictions of the model under the `results_cleaned` folder. 
