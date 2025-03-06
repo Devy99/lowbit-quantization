@@ -1,9 +1,0 @@
-"","base_precision","quant_precision","lng","model","p.value","OR"
-"8","2bit","2bit-finetuned","java","deepseekcoder-7b",3.48098854420363e-07,1.59685863874346
-"7","3bit","3bit-finetuned","java","deepseekcoder-7b",1,0.994845360824742
-"6","2bit","2bit-finetuned","py","deepseekcoder-7b",3.38010671883585e-19,2.66990291262136
-"5","3bit","3bit-finetuned","py","deepseekcoder-7b",0.249478267745222,1.13450292397661
-"4","2bit","2bit-finetuned","java","codellama-7b",1.02164153655623e-18,2.86904761904762
-"3","3bit","3bit-finetuned","java","codellama-7b",0.0209395843438394,1.30656934306569
-"2","2bit","2bit-finetuned","py","codellama-7b",7.3675757850674e-10,2.00892857142857
-"1","3bit","3bit-finetuned","py","codellama-7b",0.568805329113751,0.912621359223301
