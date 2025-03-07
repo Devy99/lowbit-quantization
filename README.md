@@ -48,6 +48,8 @@ In particular, you can find the following folders:
 - **predictions**: we provide completions of all analyzed models for each experiment and benchmark in MultiPL-E-compatible files. Each folder contains `*.json.gz` files with all model's predictions for each task, as well as `*.results.json.gz` files with the test results for each completion. 
 - **results**: contains the accuracies of the evaluated models as well as the results of statistical tests on both MultiPL-E and McEval benchmarks.
 
+All the quantized models are instead available in our [HuggingFace repository](https://huggingface.co/collections/Devy1/quantization-for-code-generation-67c9b83b34ed9a5a84fb714d).
+
 
 ## Replication of the results
 Below, we provide a step-by-step guide for running our code.
